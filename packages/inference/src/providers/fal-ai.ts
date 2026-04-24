@@ -71,7 +71,16 @@ interface FalAITextToSpeechOutput {
 		content_type: string;
 	};
 }
-export const FAL_AI_SUPPORTED_BLOB_TYPES = ["audio/mpeg", "audio/mp4", "audio/wav", "audio/x-wav"];
+export const FAL_AI_SUPPORTED_BLOB_TYPES = [
+	"audio/mpeg",
+	"audio/mp4",
+	"audio/wav",
+	"audio/x-wav",
+	"audio/flac",
+	"audio/x-flac",
+	"audio/ogg",
+	"audio/webm",
+];
 
 abstract class FalAITask extends TaskProviderHelper {
 	constructor(url?: string) {
